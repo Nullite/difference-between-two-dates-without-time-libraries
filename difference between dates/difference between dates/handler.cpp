@@ -42,7 +42,7 @@ void monthsDaysCalc(int month1, int month2, int& date1, int& date2)
 	date2 += days2 - 1;
 }
 
-int datesDifferences( struct Date dateFirst, struct Date dateSecond)
+int datesDifferences(Date dateFirst, Date dateSecond)
 {
 
 	int daysInDate1 = dateFirst.day + dateFirst.year * 365 - 365;

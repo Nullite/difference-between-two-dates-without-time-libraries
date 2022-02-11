@@ -5,7 +5,7 @@
 
 
 
-void getDate(struct Date& date)
+void getDate(Date& date)
 {
 	std::cout << "Enter a day\n\n";
 	std::cin >> date.day;
@@ -43,5 +43,12 @@ std::string getFormatDate(struct Date date)
 
 	std::string formatDate = day + " / " + month + " / " + year;
 	return formatDate;
+}
+
+bool EnterDate(bool isFirstDate)
+{
+	if (isFirstDate) std::cout << "Enter a first Date.\n\n";
+	else std::cout << "Enter a second date.\n\n";
+	return false;
 }
 

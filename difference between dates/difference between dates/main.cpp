@@ -8,9 +8,11 @@
 Date date1;
 Date date2;
 int dateDiff;
+bool isFirstDate = true;
 
 int main()
 {
+	isFirstDate = EnterDate(isFirstDate);
 	try
 	{
 		getDate(date1);
@@ -30,6 +32,7 @@ int main()
 		}
 	}
 	system("cls");
+	EnterDate(isFirstDate);
 	try
 	{
 		getDate(date2);

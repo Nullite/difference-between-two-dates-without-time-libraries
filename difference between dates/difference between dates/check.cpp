@@ -2,7 +2,7 @@
 #include "check.h"
 
 
-void checkDate(struct Date date)
+void checkDate(Date date)
 {
 	if (date.day <= 0) throw - 1;
 	if ((date.day > 28 && date.month == 2 && !(!(date.year % 4) && date.year % 100 || !(date.year % 400)))) throw - 1;

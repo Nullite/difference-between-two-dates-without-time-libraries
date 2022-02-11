@@ -1,2 +1,2 @@
 #pragma once
-void showResults(Date date1, Date date2, int diff);
+void showResults(struct Date date1, struct Date date2, int diff);
